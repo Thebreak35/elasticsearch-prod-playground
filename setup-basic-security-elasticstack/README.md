@@ -1,4 +1,5 @@
 #Setup security for Elasticsearch stack
+
 Production mode ต้องทำ **TSL/SSL** เพื่อ ensure ว่าจะไม่มี unauthorized nodes เข้ามา join cluster
 
 ### Elasticsearch Ports (Default)
@@ -8,6 +9,7 @@ Production mode ต้องทำ **TSL/SSL** เพื่อ ensure ว่า�
 ---
 
 ##Generate CA (Certificat Authority)
+
 ทุก nodes ใน cluster ต้องคุยกันได้
 ต้องทำให้ internode encrypted and verified
 ใน secure cluster, Elasticsearch จะใช้ CA เพื่อยืนยันตัวตนตอนคุยกับ node อื่นๆ
